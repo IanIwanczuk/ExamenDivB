@@ -84,15 +84,17 @@ function mostrar()
 
 		// A)
 		if(tipoVacuna == "rusa"){
+			alert("Rusa")
 			vacunadosRusa++;
 			acumEdadRusa += edad;
-			// alert(vacunadosRusa + " " + acumEdadRusa);
+			alert(vacunadosRusa + " " + acumEdadRusa);
 		} else if(tipoVacuna == "americana"){            // C)
+			alert("Americana")
 			vacunadosAmericana++;
 			if(edad >= 18){
 				vacMayoresAmerica++;
 			}
-			// alert(vacunadosAmericana + " " + vacMayoresAmerica);
+			alert(vacunadosAmericana + " " + vacMayoresAmerica);
 		}
 
 		// B)
@@ -137,8 +139,8 @@ function mostrar()
 
 	document.write("A) Promedio de edad de la vacuna Rusa: " + promedEdadRusa +
 				 "<br>B) Mujer con más edad: " + mujMasEdad + ", con la vacuna " + mujMasEdadVacuna + 
-				 "<br>C) Porcentaje de mayores de edad con vacuna americana: " + porcentajeMayoresAmerica + 
-				 "<br>D) Porcentaje de gente con la segunda dósis: " + porcentajeSegunDosis + 
+				 "<br>C) Porcentaje de mayores de edad con vacuna americana: " + porcentajeMayoresAmerica + "%" + 
+				 "<br>D) Porcentaje de gente con la segunda dósis: " + porcentajeSegunDosis + "%" +
 				 "<br>E) La vacuna menos inoculada fue la " + vacunaMenos);
 
 } // Función.
