@@ -86,13 +86,13 @@ function mostrar()
 		if(tipoVacuna == "rusa"){
 			vacunadosRusa++;
 			acumEdadRusa += edad;
-			alert(vacunadosRusa + " " + acumEdadRusa);
+			// alert(vacunadosRusa + " " + acumEdadRusa);
 		} else if(tipoVacuna == "americana"){            // C)
 			vacunadosAmericana++;
 			if(edad >= 18){
 				vacMayoresAmerica++;
 			}
-			alert(vacunadosAmericana + " " + vacMayoresAmerica);
+			// alert(vacunadosAmericana + " " + vacMayoresAmerica);
 		}
 
 		// B)
